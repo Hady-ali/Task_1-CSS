@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f5f6fb;
+    color: #172b49;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 84%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background-color: #10223e;
+    padding: 25px 0;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.logo span {
+    color: #9b75ed;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #d7deea;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #9b75ed;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    min-height: 505px;
+
+    background-image:
+        linear-gradient(
+            rgba(12, 27, 48, 0.58),
+            rgba(12, 27, 48, 0.58)
+        ),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 620px;
+}
+
+.hero-text h1 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    margin-bottom: 28px;
+}
+
+.hero-text h1 span {
+    color: #9b75ed;
+}
+
+.hero-text p {
+    color: #e0e4eb;
+    font-size: 20px;
+    line-height: 1.6;
+
+    max-width: 610px;
+    margin-bottom: 32px;
+}
+
+
+.hero-button {
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #8956ed;
+    color: #ffffff;
+
+    padding: 17px 34px;
+    border-radius: 40px;
+
+    font-size: 18px;
+
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #7040d0;
+}
+
+
+/* ================= SECTION ================= */
+
+.courses-section {
+    padding: 75px 0 65px;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    color: #172b49;
+    font-size: 36px;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.section-heading p {
+    color: #8792a2;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.course-card {
+    position: relative;
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 35px 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(20, 35, 60, 0.08);
+
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.web-card {
+    background-color: #eee7ff;
+}
+
+.ui-card {
+    background-color: #e0f2ff;
+}
+
+.data-card {
+    background-color: #dcf8ed;
+}
+
+.course-card h3 {
+    color: #172b49;
+
+    font-size: 25px;
+    font-weight: 500;
+
+    margin-bottom: 22px;
+}
+
+
+.course-card p {
+    color: #778394;
+
+    font-size: 18px;
+    line-height: 1.65;
+
+    margin-bottom: 28px;
+}
+
+.course-card a {
+    display: inline-block;
+
+    color: #7951b5;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.course-card a:hover {
+    color: #512d91;
+}
+
+
+.new-badge {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    background-color: #8956ed;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #10223e;
+
+    padding: 42px 20px;
+}
+
+.footer-content {
+    display: flex;
+
+    /* ترتيب محتوى الفوتر فوق بعض */
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.footer-content h2 {
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 500;
+
+    margin-bottom: 18px;
+}
+
+.footer-content h2 span {
+    color: #9b75ed;
+}
+
+.footer-content p {
+    color: #a6b2c5;
+    font-size: 16px;
+}
